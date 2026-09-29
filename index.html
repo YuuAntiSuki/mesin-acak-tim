@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carcaecep.com</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 900px; margin: auto; color: #333; }
+        textarea { width: 100%; height: 250px; padding: 10px; font-size: 14px; white-space: nowrap; overflow-x: auto; box-sizing: border-box; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 12px 25px; background: #0056b3; color: white; border: none; font-size: 16px; cursor: pointer; font-weight: bold; border-radius: 5px; width: 100%; margin-bottom: 20px;}
+        button:hover { background: #004494; }
+        .grid-results { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+        .team-box { border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: #fdfdfd; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .team-box h3 { margin-top: 0; color: #0056b3; border-bottom: 2px solid #0056b3; padding-bottom: 5px; font-size: 18px; }
+        .team-box ul { padding-left: 20px; margin-bottom: 0; }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center; margin-bottom: 30px;">Carcaecep.com buat tim 5 orang</h2>
+
+    <label style="display: block; margin-bottom: 8px;"><b>Daftar Anggota Tim (1 Baris = 1 Anggota)</b></label>
+    <textarea id="dataBox"></textarea>
+
+    <button onclick="spinTeams()">Proses Acak Tim</button>
+
+    <div id="result" class="grid-results"></div>
+
+    <script src="mesin.js"></script>
+</body>
+</html>
